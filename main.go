@@ -20,5 +20,5 @@ func main() {
 		},
 	)
 	i.SetTotal()
-	fmt.Printf("Total: %v", i.Amount)
+	fmt.Printf("Total: %v", i)
 }
