@@ -3,7 +3,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/ivanvqz/herencia/pkg/invoiceitem"
 	"github.com/ivanvqz/herencia/pkg/invoice"
+	"github.com/ivanvqz/herencia/pkg/customer"
 
 )
 
@@ -20,5 +22,5 @@ func main() {
 		},
 	)
 	i.SetTotal()
-	fmt.Printf("Total: %v", i)
+	fmt.Printf("Total: %+v", i)
 }
