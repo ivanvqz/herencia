@@ -1,4 +1,4 @@
-package main
+package invoiceitem
 
 // Item contiene información de la factura
 type Item struct {
@@ -7,7 +7,7 @@ type Item struct {
 	value float64
 }
 
-func Mew(id uint, product string, value float64) Item {
+func New(id uint, product string, value float64) Item {
 	return Item{id, product, value}
 }
 
