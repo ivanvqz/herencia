@@ -3,22 +3,21 @@ package main
 import (
 	"fmt"
 
-	"github.com/ivanvqz/pkg/invoice/invoice"
+	"github.com/ivanvqz/herencia/pkg/invoice"
 
 )
 
 func main() {
 	i := invoice.New(
 		"México",
-			"Puebla",
-			"Ivan",
-			customer.New("Ivan", "calle i", "12"),
-			[]invoiceitem.Item{
-				invoiceitem.New(1, "producto 1", 10),
-				invoiceitem.New(2, "producto 2", 20),
-				invoiceitem.New(3, "producto 3", 30),
-				invoiceitem.New(4, "producto 4", 30),
-			},
+		"Puebla",
+		customer.New("Ivan", "calle i", "12"),
+		[]invoiceitem.Item{
+			invoiceitem.New(1, "producto 1", 10),
+			invoiceitem.New(2, "producto 2", 20),
+			invoiceitem.New(3, "producto 3", 30),
+			invoiceitem.New(4, "producto 4", 30),
+		},
 	)
 	i.SetTotal()
 	fmt.Printf("Total: %v", i.Amount)
