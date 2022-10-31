@@ -6,5 +6,5 @@ type Invoice struct {
 	City   string
 	Amount float64
 	client customer.Customer // referencia a estructura cliente
-	items invoiceitem.
+	items []invoiceitem.Items //slice de items
 }
